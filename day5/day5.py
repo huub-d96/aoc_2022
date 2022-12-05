@@ -42,8 +42,8 @@ for instruction in data:
 
 #Check which containers are on top
 output = ''
-for i in range(len(containers)):
-    output += containers[i][-1]
+for stack in containers:
+    output += stack[-1]
 
 #Print output string
 print(output)
