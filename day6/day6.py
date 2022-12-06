@@ -11,8 +11,10 @@ Date: 06-12-2022
 file = open('input.txt', 'r')
 data = file.readlines()[0]
 
+#Set size of window to check unique characters
 window_size = 14 
 
+#Loop over all substrings until unique set is found
 mark = window_size
 while(1):
     lst = data[mark-window_size:mark]
@@ -22,4 +24,5 @@ while(1):
 
     mark += 1
 
+#Print results
 print(mark)
